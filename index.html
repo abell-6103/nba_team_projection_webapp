@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Team Projector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        NBA Team Projector
+    </header>
+    <div id="desc">
+        This site predicts how a hypothetical NBA team would perform during the regular season. Input a roster of between five to fifteen players to see how they would hypothetically perform if they were on one team.
+        <br>
+        This site uses data from the 2023-24 NBA season. If a player had zero minutes in the 2023-24 season then they are not included.
+        <br>
+        <button id="info-btn">▼ More Info ▼</button>
+    </div>
+    <div id="wrapper">
+        <div id="list_wrapper">
+            <div class="item-header">Roster</div>
+            <div id="roster-size">(0/15)</div>
+            <section id="player_lookup">
+                <div id="input-line">
+                    <input type="text" placeholder="Add Player..." id="player_input"></input>
+                    <button id="add_player_btn">&plus;</button>
+                    <button id="clear_list_btn">Clear Roster</button>
+                </div>
+            </section>
+            <section id="player_list">
+                <!--
+                <div class="player_entry">
+                    Stephen Curry
+                    <button class="remove_player_btn">
+                        &minus;
+                    </button>
+                </div>
+                <div class="player_entry">
+                    Klay Thompson
+                    <button class="remove_player_btn">
+                        &minus;
+                    </button>
+                </div>
+                <div class="player_entry">
+                    Harrison Barnes
+                    <button class="remove_player_btn">
+                        &minus;
+                    </button>
+                </div>
+                <div class="player_entry">
+                    Draymond Green
+                    <button class="remove_player_btn">
+                        &minus;
+                    </button>
+                </div>
+                <div class="player_entry list_end">
+                    Andrew Bogut
+                    <button class="remove_player_btn">
+                        &minus;
+                    </button>
+                </div>
+                -->
+            </section>
+            <div id="error_notif">Not enough players.</div>
+        </div>
+        <section id="info_display">
+            <div class="item-header">Performance</div>
+            <div id="display">0-82</div>
+            <div id="rtg_display">Offensive Rating: N/A<br>
+                Defensive Rating: N/A<br>
+                Net Rating: N/A<br>
+                Pace: N/A<br>
+                <br>
+                eFG%: N/A<br>
+                TOV%: N/A<br>
+                REB%: N/A<br>
+                FT/FGA: N/A
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

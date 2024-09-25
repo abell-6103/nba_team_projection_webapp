@@ -1,0 +1,188 @@
+body {
+    background: linear-gradient(white,rgb(240,240,240));
+    background-attachment: fixed;
+    color: black;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 10px;
+
+    background-color: rgb(45, 43, 51);
+    color: rgb(243, 243, 239);
+}
+
+#desc {
+    background-color: rgb(243, 243, 239);
+    width: 400px;
+
+    margin: 2.5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 7.5px;
+
+}
+
+#info-btn {
+    margin-bottom: -15px;
+    margin-top: 5px;
+    padding: 5px;
+    background: none;
+    border-style: none;
+
+    font-style: italic;
+    font-size: 12px;
+}
+
+#info-btn:hover {
+    background-color: rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+
+#info-btn:active {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.item-header {
+    text-align: center;
+    margin-bottom: 5px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    color: rgb(45, 43, 51);    
+}
+
+div#wrapper {
+    text-align: left;
+
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#info_display {
+    background-color: rgb(243, 243, 239);
+
+    margin: 2.5px;
+    padding: 5px;
+
+    width: 200px;
+    height: auto;
+    text-align: center;
+    align-content: center;
+
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 7.5px;
+}
+
+#list_wrapper {
+    width: 500px;
+    margin: 2.5px;
+    padding: 5px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 7.5px;
+    border-color: black;
+    background-color: rgb(243, 243, 239);
+}
+
+#roster-size {
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+    color: rgb(107,103,120);
+}
+
+#player_lookup {
+    margin: 5px;
+    height: 25px;
+}
+
+#input-line {
+    display: grid;
+    grid-template-columns: auto 25px 100px;
+}
+
+div#error_notif {
+    color: red;
+    font-size: 12px;
+    margin: 2px;
+    font-style: italic;
+    text-align: center;
+}
+
+div#display {
+    background-color: white;
+    color: black;
+    width: 100px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1.5px;
+
+    font-family: Verdana;
+    text-align: center;
+    font-size: 28px;
+    font-weight: lighter;
+
+    padding: 2.5px;
+    margin: 2.5px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#player_list {
+    background-color: rgba(255,255,255,1);
+    height: 250px;
+
+    margin: 5px;
+    overflow-y: auto;
+
+    border-style: solid;
+    border-width: 1.5px;
+}
+
+div.player_entry {
+    padding: 4.5px;
+
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 1px;
+
+    text-align: left;
+}
+
+button.remove_player_btn {
+    background-color: rgba(255,255,255,0);
+    float: right;
+
+    align-content: center;
+    text-align: center;
+
+    border-style: none;
+    border-width: 1px;
+    border-color: white;
+    
+    font-weight: bold;
+}
+
+button.remove_player_btn:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+button.remove_player_btn:active {
+    background-color: rgba(0,0,0,0.2);
+}
