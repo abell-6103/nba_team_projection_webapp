@@ -1,7 +1,3 @@
-# Name: NBA Team Evaluator Data Reference Constructor
-# Author: Andrew Bell
-# Purpose: Use the nba_api python library to store some player data points in a json file to be referenced by a webapp
-
 import pandas as pd
 
 # Uses the nba_api library to get player stats https://github.com/swar/nba_api
