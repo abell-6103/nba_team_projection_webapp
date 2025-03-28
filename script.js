@@ -285,7 +285,8 @@ let more_info = false; // Boolean indicating whether or not the description is e
 
 // Short description, always visible
 const desc_str = `This site predicts how a hypothetical NBA team would perform during the regular season. Input a roster of between five to fifteen players to see how they would hypothetically perform if they were on one team.
-<br>This site uses data from the 2023-24 NBA season. If a player had zero minutes in the 2023-24 season then they are not included.
+<br>This site is configured to only use data from a single chosen season. If a player did not appear during that season, they will not be available to select from on this site.
+<br>Player names are spelling sensitive. Make sure to input a player's name exactly as it is listed by the NBA (Luka Dončić is correct while Luka Doncic is incorrect).
 <br>`;
 
 const more_info_btn_html = `<button id="info-btn">▼ More Info ▼</button>`; // Used when displaying the short description
@@ -293,7 +294,7 @@ const hide_info_btn_html = `<button id="info-btn">▲ Hide Info ▲</button>`; /
 
 // Long description, toggleable
 const extra_info_str = `<br>Over the course of an NBA season, a player's performance can be gauged via stats such as offensive rating, defensive rating, and possessions per game. 
-Assuming that a player's performance in the 2024-25 season will be similar to that of the 2023-24 season, a prediction for how that player's team will perform can be generated.
+Using these stats, a roster of players from across the NBA can be constructed and have their hypothetical performance on the same team predicted.
 <br>
 <br>Possession: An uninterrupted stretch where a team is in control of the ball
 <br>Offensive Rating: Points generated per 100 possessions of play
