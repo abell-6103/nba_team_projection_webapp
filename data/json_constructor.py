@@ -3,7 +3,7 @@ import pandas as pd
 # Uses the nba_api library to get player stats https://github.com/swar/nba_api
 from nba_api.stats.endpoints import playerestimatedmetrics, leaguedashplayerstats, leaguedashteamstats
 
-NBA_SEASON = "2023-24" # This can be changed to any season from 1996-97 and onward
+NBA_SEASON = "2024-25" # This can be changed to any season from 1996-97 and onward
 
 estimated_metrics = playerestimatedmetrics.PlayerEstimatedMetrics(league_id="00",season=NBA_SEASON).get_data_frames()[0].sort_values(by=['PLAYER_ID']).reset_index()
 player_stats = leaguedashplayerstats.LeagueDashPlayerStats(season=NBA_SEASON).get_data_frames()[0].sort_values(by=['PLAYER_ID']).reset_index()
